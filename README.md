@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [src](https://your-solution-url.com)
+- Solution URL: [src](https://github.com/btebe/rps-game)
 - Live Site URL: [game](https://btebe.github.io/rps-game/)
 
 ## My process
