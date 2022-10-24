@@ -434,7 +434,7 @@
   display: none;
 }
 
-.result > h1 {
+.result > h2 {
   color: var(--light-clr);
   font-size: var(--fs-result);
   line-height: var(--lh-result);

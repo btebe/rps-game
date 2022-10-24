@@ -19,7 +19,7 @@ var resultCon = document.getElementById("result");
 var player = document.getElementById("player");
 var computer = document.getElementById("computer");
 var score = document.getElementById("playerScore");
-let result_text = document.querySelector(".result h1");
+let result_text = document.querySelector(".result h2");
 var final_text = document.getElementById("endText");
 
 // button elements
