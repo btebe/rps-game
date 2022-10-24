@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap");
+
+:root {
+  --scissors-clr: hsla(39, 89%, 49%, 1);
+  --paper-clr: hsla(230, 89%, 62%, 1);
+  --rock-clr: hsla(349, 71%, 52%, 1);
+  --dark-clr: hsl(229, 25%, 31%);
+  --light-clr: #fbfbfb;
+  --grey-clr: #dddddd;
+  --score-clr: hsl(229, 64%, 46%);
+  --outline-clr: hsl(217, 16%, 45%);
+  --bg-clr: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  --fs-600: 64px;
+  --fs-550: 56px;
+  --fs-500: 40px;
+  --fs-490: 32px;
+  --fs-450: 24px;
+  --fs-400: 21px;
+  --fs-300: 15px;
+  --fs-200: 16px;
+  --fs-100: 10px;
+
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-400: 400;
+
+  --lh-700: 67px;
+  --lh-600: 64px;
+  --lh-500: 40px;
+  --lh-400: 32px;
+  --lh-300: 19px;
+  --lh-200: 16px;
+  --lh-100: 12px;
+
+  --fs-logo: var(--fs-400);
+  --fs-header: var(--fs-100);
+  --fs-score: var(--fs-500);
+  --fs-player-text: var(--fs-300);
+  --fs-btn: var(--fs-200);
+  --fs-result: var(--fs-550);
+  --fs-rule: var(--fs-490);
+
+  --lh-logo: var(--lh-200);
+  --lh-header: var(--lh-100);
+  --lh-score: var(--lh-500);
+  --lh-player-text: var(--lh-400);
+  --lh-btn: var(--lh-300);
+  --lh-result: var(--fs-700);
+  --lh-rule: var(--lh-400);
+}
+
+/* desktop */
+@media (min-width: 1000px) {
+  :root {
+    --fs-logo: var(--fs-500);
+    --fs-header: var(--fs-200);
+    --fs-score: var(--fs-600);
+    --fs-player-text: var(--fs-450);
+    --fs-btn: var(--fs-200);
+    --fs-result: var(--fs-550);
+
+    --lh-logo: var(--lh-400);
+    --lh-header: var(--lh-300);
+    --lh-score: var(--lh-600);
+    --lh-player-text: var(--lh-400);
+    --lh-btn: var(--lh-300);
+    --lh-result: var(--fs-700);
+  }
+}
+
+/* ------------- */
+/* Reset         */
+/* ------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role,
+ which suggests default styling will be removed */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* html, body{
+  height: 100%;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set core body defaults */
+
+body {
+  text-rendering: optimizeSpeed;
+  font-family: var(--ff-primary);
+  background: var(--bg-clr);
+  text-transform: uppercase;
+  display: grid;
+  min-height: 100vh;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------- */
+/* Utility Classes  */
+/* ------------- */
+
+
+.body-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content repeat(2,auto);
+  row-gap: 0rem;
+}
+
+@media (min-width: 1000px) {
+  .body-container {
+    row-gap: 0rem;
+  }
+}
+
+.container {
+  padding-inline: 2rem;
+  /* margin-inline: auto; */
+  max-width: 80rem;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding-inline: 10rem;
+  }
+}
+
